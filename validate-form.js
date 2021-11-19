@@ -1,6 +1,6 @@
 import { useState } from "react";
-const useManagingInput = (givenValue, validationCheck) => {
-  const [value, setValue] = useState(givenValue);
+const useManagingInput = (initialValue, validationCheck) => {
+  const [value, setValue] = useState(initialValue);
   const [isInputValid, setInputValid] = useState(false);
 
   //let isInputValid = false;
